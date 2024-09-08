@@ -1,0 +1,21 @@
+{
+  "name": "mocha-forvscode-bug-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "NODE_ENV=test npx mocha --forbid-only",
+    "test": "NODE_ENV=test npm run compile && mocha --require test/global.hooks.js --exit",
+    "mocha": "mocha test/ --require test/global.hooks.js --forbid-only --recursive --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
